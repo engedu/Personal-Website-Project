@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.burger,.pancake,.spaghettica,.spaghettired,.sandwich,.salad{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.burger{
+  background: url("../foods/1.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.pancake{
+  background: url("../foods/2.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.spaghettica{
+  background: url("../foods/3.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.spaghettired{
+  background: url("../foods/4.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.sandwich{
+  background: url("../foods/5.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.salad{
+  background: url("../foods/6.jpg");
+  width: 100%;
+  background-size: cover;
+}
+h2 {
+  color: #F9E79F;
+  font-family: fantasy;
+}
+.top-bar{
+  background-color: #000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.logo{
+  color: #fff;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 40px;
+  padding: 18px;
+  text-transform: uppercase;
+}
+.menu{
+  -webkit-flex: 3px;
+  -moz-flex: 3px;
+  -ms-flex: 3px;
+  -o-flxe: 3px;
+  -webkit-box-flex: 3px;
+  flex: 3px;
+
+}
+.menu ul{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -webkit-flexbox;
+  display: flex-block;
+  list-style: none;
+  margin-top: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row ;
+}
+
+.menu ul li{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align:center;
+
+}
+.menu ul li a{
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.a1 {
+  padding: 17px;
+  margin: 0px;
+  width: 200px;
+  height: 40px;
+  background-color: #F4D03F;
+  line-height: 50px;
+  opacity: 0.9;
+}
+.a1:hover{
+  background-color: #2ECC71;
+}
+
+/*SunHaJung*/
+.SunHaJung-text{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15% 0;
+}
+.SunHaJung-text-items{
+  color: 	#FFF8DC;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  border-radius: 20px;
+  padding: 5%;
+  background-color:hsla(12, 5%, 22%, 0.3);
+}
+.SunHaJung-text-items h2{
+  font-size: 4em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.SunHaJung-text-items p{
+  font-size: 20px;
+}
+
+/*ลูกศร*/
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+
+/*main-content*/
+.main-content{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 5% 25px 0px 10px;
+}
+.main1{
+  flex: 1;
+  padding: 3%
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+
+@media all and (max-width:500px) {
+  body{
+    padding: 0px 10px;
+  }
+  .top-bar{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: coloumn;
+    padding: 0 0 5px 0;
+    flex-align: center;
+  }
+  .logo{
+    padding: 18 0 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu ul{
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .menu ul li{
+    padding: 5px;
+  }
+  .SunHaJung-text-items{
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .main-content{
+    flex-direction: column;
+  }
+}
